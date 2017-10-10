@@ -7,6 +7,6 @@ Un pequeño script en session cairo-dock(GNOME),el cual soluciona las multiples 
 
 3. selecionar spotify y donde dice ```comando para lanazar al hacer click ``` poner ```exec spotify-fix```
 
-4. abrir spotify, cada vez que inicie spotify checar ```/home/your/Escritorio/spotify-id.txt``` no cause conflicto con ontra ventana ```$wmctrl -lp```
+4. abrir spotify, cada vez que inicie spotify checar ```/home/your/Escritorio/spotify-id.txt``` no cause conflicto con ontra ventana ```$wmctrl -lp```, si causa conflicto limpiar el archivo
 
 
