@@ -3,7 +3,7 @@ Un pequeño script en session cairo-dock(GNOME),el cual soluciona las multiples 
 
 1.- Crear un spotfy-fix: $sudo gedit /usr/bin/spotify-fix
 
-2.- click-derecho sobre cairo-dock buscar icon spotify
+2.- click-derecho sobre cairo-dock y buscar el icon spotify
 
-3.- selecionar spotiy,  deonde dice comando para lanazar al hacer clik poner
+3.- selecionar spotify,  donde dice comando para lanazar al hacer clik poner
     exec spotify-fix
