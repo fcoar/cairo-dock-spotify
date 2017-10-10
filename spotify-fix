@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Leer el file
+winid=$(head -n 1 /home/your/Desktop/spotify-id.txt)
+# checar otra vez winid 
+winid_check=$(wmctrl -lp | grep "$winid" | grep "0x" | grep -Eo "0x[a-z0-9]+")
+
+# checar que no este vacio winid  
+if [ -z "$winid" ]; then
+   spotify & sleep 2s;
+   winid=$(wmctrl -lp | grep "Spotify" | grep "0x" | grep -Eo "0x[a-z0-9]+")
+   echo $winid > /home/your/Desktop/spotify-id.txt 
+   #gedit /home/your/Desktop/spotify-id.txt   	
+  else		 	
+   wmctrl -i -a "$winid";
+fi
+
+
+if [ -z "$winid_check" ]; then
+	echo "" > /home/francisco/Escritorio/spotify-id.txt
+	exit 0
+fi
+
